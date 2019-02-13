@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Opgave_2_Per_Fag
 {
@@ -33,8 +34,17 @@ namespace Opgave_2_Per_Fag
             Console.WriteLine("Great, now let me just print you a Faktura");
 
             pris_ialt  = pris * antal;
-            rabat_pris = pris_ialt * 0.05;
-            rabat_ialt = pris_ialt * rabat;
+
+            if (antal >= 10)
+            {
+                 rabat_pris = pris_ialt * 0.05;
+                 rabat_ialt = pris_ialt * rabat;
+            }
+            else
+            {
+                 rabat_pris = 0;
+                 rabat_ialt = pris_ialt;
+            }
             moms_pris  = rabat_ialt * 0.25;
             moms_ialt  = rabat_ialt * moms;
 
