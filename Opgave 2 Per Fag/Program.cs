@@ -60,11 +60,11 @@ namespace Opgave_2_Per_Fag
                 "|                                                  \n" +
                 "|                                                  \n" +
                 "|--------------------------------------------------\n" +
-                "| Price w/o discount: {6}                          \n" +
-                "| Your saving is    : {7}                          \n" +
-                "| Price w/ discount : {8}                          \n" +
-                "| Tax               : {9}                          \n" +
-                "| Price w/ Tax      : {10}                         \n" +
+                "| Price w/o discount: {6:0.00}                     \n" +
+                "| Your saving is    : {7:0.00}                     \n" +
+                "| Price w/ discount : {8:0.00}                     \n" +
+                "| Tax               : {9:0.00}                     \n" +
+                "| Price w/ Tax      : {10:0.00}                    \n" +
                 "|          Thank you for shopping whit us          \n" +
                 "|                 Have a nice day                  \n" +
                 "|__________________________________________________", 
